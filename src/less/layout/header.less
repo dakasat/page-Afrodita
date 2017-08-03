@@ -1,0 +1,40 @@
+.header {
+  &__logo {
+    display: inline-block;
+    float: left;
+  }
+
+  &__menu {
+    display: block;
+    float: right;
+
+    &-link {
+      display: inline-block;
+      font-size: 0;
+      position: relative;
+      margin-right: 50px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover::after {
+        position: absolute;
+        content: "";
+        height: 5px;
+        width: 90px;
+        background-color: #000;
+        top: 30px;
+        left: 0;
+      }
+
+      a {
+        display: block;
+        .mix-min-bold;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #000;
+      }
+    }
+  }
+}

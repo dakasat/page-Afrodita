@@ -1,0 +1,391 @@
+
+// Выступающие боковые надписи
+
+.said__left {
+  position: absolute;
+  display: inline-block;
+  left: -70px;
+  top: 140px;
+}
+
+.said__left-text {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 300;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -o-transform: rotate(-90deg);
+}
+
+.said__left-img {
+  .sprite(@s-circle);
+  position: absolute;
+  left: 67px;
+  top: 100px;
+}
+
+.said__right {
+  position: absolute;
+  display: inline-block;
+  right: -150px;
+  top: 1730px;
+}
+
+.said__right-text {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 300;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -o-transform: rotate(-90deg);
+}
+
+// Основной контент
+// Главный баннер
+
+.main{
+&__banner{
+    max-width: 1140px;
+    text-align: center;
+    position: relative;
+}
+
+&__banner-img{
+    width: 100%;
+    height: auto;
+    }
+
+&__banner-text{
+    position: absolute;
+    display: inline-block;
+    width: 550px;
+    height: 200px;
+    top:100px;
+    left:50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 100px;
+    color:#fff;
+}
+}
+
+// Секция о нас
+// Первая секция о нас
+.about {
+  &__first {
+    margin-bottom: 40px;
+    margin-top: 100px;
+    position: relative;
+  }
+
+  &__descr {
+    display: block;
+    max-width: 34%;
+    // max-width: 390px;
+    float: left;
+    margin-right: 30px;
+  }
+
+  &__descr-title {
+    margin-bottom: 40px;
+    font-size: 4rem;
+    line-height: 70px;
+    font-weight: 700;
+  }
+
+  &__descr-text {
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+
+  &__descr-link {
+    .mix-min-bold;
+    color: #000;
+    text-decoration: none;
+  }
+
+  &__first-foto-wrapper {
+    float: right;
+    position: relative;
+    width: 710px;
+  }
+
+  &__first-decor {
+    width: 265px;
+    display: block;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+
+  &__first-foto {
+    float: right;
+    max-width: 540px;
+  }
+  &__first-foto-img {
+    width: 100%;
+    height: auto;
+  }
+
+}
+// Конец первой секции о нас
+
+// Даты в секциях
+.about__date-right {
+  display: block;
+  float: right;
+  margin-bottom: 30px;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.about__date-left {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+// Вторая секция о нас
+
+.about__second {
+  position: relative;
+  a {
+    text-decoration: none;
+  }
+
+  &-foto {
+    position: relative;
+    float: left;
+    max-width: 542px;
+
+    &-img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.about__descript {
+  float: right;
+  width: 598px;
+
+  &-title {
+    display: inline-block;
+    padding-left: 50px;
+    margin-top: -23px;
+    text-align: left;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+
+    span {
+      font-size: 2.66rem;
+    }
+  }
+
+  &-text {
+    width: 598px;
+    height: 215px;
+    padding: 20px 40px 0 50px;
+    margin-top: 10px;
+    text-align: left;
+    line-height: 30px;
+    background-color: #f6f6f6;
+    box-sizing: border-box;
+  }
+
+  &-link {
+    display: block;
+    .mix-min-bold;
+    color: #000;
+    padding-left: 50px;
+    margin-top: -60px;
+  }
+}
+// Конец второй секции о нас
+
+// Третья секция о нас
+
+.about__fird {
+  margin-bottom: 100px;
+
+  &-title {
+    display: inline-block;
+    max-width: 540px;
+    margin-top: 175px;
+    font-size: 5.33rem;
+    line-height: 100px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  &-foto {
+    float: right;
+    margin-top: -130px;
+  }
+}
+
+// Секция подписки
+
+.sub{
+    width: 1140px;
+    height: 260px;
+    background-image: url("../img/sub-img.jpg");
+    background-size: cover;
+    background-position: center center;
+    padding: 90px 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: center;
+    a{
+        text-decoration: none;
+    }
+
+&__text{
+    display: inline-block;
+    font-size: 3.33rem;
+    color: #fff;
+    font-weight: 700;
+}
+&__btn{
+    display: block;
+    width: 130px;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-weight: 700;
+    background-color: #fff;
+    line-height: 30px;
+    border-radius: 20px;
+    color:#000;
+}
+}
+// Конец секции подписка
+
+// Секция команда
+.team__foto-wrapper {
+  // margin: 0 -2.7% 2rem -2.7%;
+  display: flex;
+  align-content: space-between;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 100px 0;
+}
+
+.team {
+    &__links {
+      text-align: center;
+      margin: 100px 0 60px;
+
+      li {
+        position: relative;
+        display: inline-block;
+        margin-left: 60px;
+        .mix-min-bold;
+        text-transform: uppercase;
+
+        &::after {
+          position: absolute;
+          content: "";
+          width: 10px;
+          height: 2px;
+          background-color: #000;
+          right: -35px;
+          top: 50%;
+        }
+
+        &:last-child::after {
+          width: 0;
+          height: 0;
+        }
+
+        a {
+          color: #000;
+          text-decoration: none;
+        }
+      }
+    }
+
+    &__text {
+      text-align: center;
+      margin: 0 auto;
+      width: 800px;
+      line-height: 30px;
+    }
+
+  &__foto {
+    display: block;
+    position: relative;
+    margin-right: 25px;
+    margin-bottom: 25px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    span {
+      position: absolute;
+      display: inline-block;
+      top: 170px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 6rem;
+      text-transform: uppercase;
+      font-weight: 800;
+      line-height: 100px;
+      color: #fff;
+    }
+  }
+
+  &__descript {
+    float: right;
+    width: 598px;
+
+    a {
+      text-decoration: none;
+    }
+
+    &-title {
+      margin-top: -23px;
+      text-align: left;
+      padding-left: 50px;
+      font-size: 4rem;
+      font-weight: 700;
+      line-height: 60px;
+      text-transform: uppercase;
+
+      span {
+        font-size: 2.66rem;
+      }
+    }
+
+    &-text {
+      width: 600px;
+      height: 350px;
+      padding: 30px 40px 0 50px;
+      margin-top: 30px;
+      text-align: left;
+      line-height: 30px;
+      background-color: #f6f6f6;
+      padding-left: 50px;
+      box-sizing: border-box;
+    }
+
+    &-link {
+      display: block;
+      .mix-min-bold;
+      color: #000;
+      padding-left: 50px;
+      margin-top: -60px;
+    }
+  }
+}
+// Конец секции команда
